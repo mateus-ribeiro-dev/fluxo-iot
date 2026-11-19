@@ -1,4 +1,4 @@
-# Fluxo — Monitoramento Inteligente de Estações 
+# [Fluxo — Monitoramento Inteligente de Estações ](https://www.tinkercad.com/things/aPtseLBrnI7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=5fM0NJVFUbayt8rREcQytNmlL1yRxAKI-VxXekQTiPI)
 
 **FIAP | Global Solution 2026/2 — CitizenTech**  
 Disruptive Architectures: IoT, IoB & Generative IA
