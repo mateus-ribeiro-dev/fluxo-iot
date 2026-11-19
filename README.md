@@ -1,4 +1,4 @@
-# Fluxo — Monitoramento Inteligente de Estações
+# Fluxo — Monitoramento Inteligente de Estações 
 
 **FIAP | Global Solution 2026/2 — CitizenTech**  
 Disruptive Architectures: IoT, IoB & Generative IA
@@ -76,3 +76,10 @@ Em uma implantação real, propõe-se utilizar um gateway conectado ao Arduino p
 | Terminal de monitoramento | Exibir informações aos controladores |
 
 A comunicação poderá utilizar TCP/IP e HTTPS, com autenticação dos dispositivos. A estação, o horário da leitura, a quantidade de pessoas e o percentual de ocupação poderão compor cada registro. Essa arquitetura é uma proposta de expansão, independente de uma implementação específica de backend.
+
+## 4. Diagrama da arquitetura
+acesse [fluxo](https://www.tinkercad.com/things/aPtseLBrnI7/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=5fM0NJVFUbayt8rREcQytNmlL1yRxAKI-VxXekQTiPI)
+
+<img width="1573" height="579" alt="image" src="https://github.com/user-attachments/assets/207223b5-80e7-40ca-8786-b825376f89ae" />
+
+O Arduino realiza a aquisição e o processamento dos dados. Os LEDs e o Monitor Serial representam o resultado local.
