@@ -36,3 +36,43 @@ A capacidade de referência foi definida em 10 pessoas. O percentual de ocupaç�
 | A partir de 90% | 🔴 LED vermelho | Crítica |
 
 O Monitor Serial apresenta a quantidade de pessoas, o percentual de ocupação, a situação atual e, em caso de ocupação crítica, uma recomendação de aumento da frequência dos trens. A contagem pode ultrapassar a capacidade para representar situações de excesso de ocupação.
+
+## 3. Identificação dos componentes e do fluxo de comunicação em rede
+
+### Componentes do protótipo
+
+| Componente | Quantidade | Função |
+| --- | ---: | --- |
+| Arduino Uno | 1 | Processamento e controle dos indicadores |
+| Sensor ultrassônico | 2 | Detecção de entradas e saídas |
+| LEDs verde, amarelo e vermelho | 3 | Sinalização da ocupação |
+| Resistores de 1 kΩ | 3 | Limitação da corrente dos LEDs |
+| Protoboard | 1 | Organização das conexões |
+| Jumpers | Conforme necessário | Interligação dos componentes |
+
+### Conexões com o Arduino
+
+| Componente | Pinos |
+| --- | --- |
+| Sensor de entrada | TRIG 12 / ECHO 11 |
+| Sensor de saída | TRIG 8 / ECHO 9 |
+| LED verde | 5 |
+| LED amarelo | 6 |
+| LED vermelho | 7 |
+| Alimentação dos sensores | 5V e GND |
+
+### Comunicação em rede
+
+Na simulação, o Arduino disponibiliza os dados pelo Monitor Serial.
+
+Em uma implantação real, propõe-se utilizar um gateway conectado ao Arduino por USB/Serial. O gateway receberia os dados, organizaria as informações e as enviaria por HTTPS, utilizando a rede local da estação, até um servidor de monitoramento.
+
+| Componente de rede proposto | Função |
+| --- | --- |
+| Gateway | Receber e encaminhar os dados do Arduino |
+| Switch ou ponto de acesso | Conectar o gateway à rede local |
+| Roteador | Encaminhar os dados entre redes, quando necessário |
+| Servidor | Receber, armazenar e disponibilizar os dados |
+| Terminal de monitoramento | Exibir informações aos controladores |
+
+A comunicação poderá utilizar TCP/IP e HTTPS, com autenticação dos dispositivos. A estação, o horário da leitura, a quantidade de pessoas e o percentual de ocupação poderão compor cada registro. Essa arquitetura é uma proposta de expansão, independente de uma implementação específica de backend.
