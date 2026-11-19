@@ -90,3 +90,36 @@ O Arduino realiza a aquisição e o processamento dos dados. Os LEDs e o Monitor
 ### [Youtube]()
 
 Aqui esta o link para ver os teste no youtube
+
+## 6. Documentação técnica e justificativa das escolhas
+
+### Tecnologias utilizadas
+
+- **Arduino Uno:** plataforma de processamento e controle do protótipo.
+- **C/C++ (Arduino):** linguagem utilizada na programação dos sensores e indicadores.
+- **Tinkercad:** ambiente de montagem, programação e simulação.
+- **Sensores ultrassônicos:** aquisição de dados sem contato físico e sem identificação pessoal.
+- **Monitor Serial:** visualização dos dados sem necessidade de uma interface externa.
+
+Os componentes foram escolhidos pela simplicidade, disponibilidade no ambiente de simulação e capacidade de demonstrar os conceitos de aquisição, processamento e disponibilização de dados em uma solução IoT.
+
+### Instruções de execução
+
+1. Acessar o Tinkercad Circuits e abrir ou montar o circuito conforme as conexões descritas.
+2. Abrir o editor de código no modo Texto e inserir o código Arduino disponibilizado no repositório.
+3. Iniciar a simulação e abrir o Monitor Serial.
+4. Selecionar o sensor de entrada e posicionar o objeto abaixo de 20 cm.
+5. Afastar o objeto para mais de 25 cm antes de simular outra passagem.
+6. Repetir o procedimento no sensor de saída e acompanhar os indicadores.
+
+O código utiliza apenas funções nativas do Arduino, sem bibliotecas externas.
+
+### Limitações e melhorias futuras
+
+O protótipo pressupõe uma área inicialmente vazia e entradas e saídas separadas, com passagens individuais. Pessoas passando simultaneamente, objetos e interferências entre sensores podem causar erros de contagem.
+
+Em uma estação real, seria necessário validar a precisão dos sensores, monitorar todos os acessos relevantes, preservar o estado da contagem e dimensionar a infraestrutura de comunicação. O armazenamento de históricos, a previsão de demanda e a integração com uma central de controle são possibilidades futuras, não funcionalidades implementadas nesta simulação.
+
+## Conclusão
+
+O Fluxo demonstra como a Internet das Coisas pode contribuir para a mobilidade urbana por meio do monitoramento da ocupação de estações. A solução transforma leituras de sensores em informações úteis para apoiar decisões operacionais, visando reduzir os impactos da superlotação e melhorar a experiência dos passageiros.
