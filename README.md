@@ -12,6 +12,9 @@ Disruptive Architectures: IoT, IoB & Generative IA
 | Luana Alves de Oliveira  | 566621 |
 | Isabely Marques da Silva | 566663 |
 
+## 0. Conexão com os ODS da ONU
+O projeto Fluxo está relacionado ao ODS 11 – Cidades e Comunidades Sustentáveis, por contribuir para um transporte público mais seguro, eficiente e acessível, e ao ODS 9 – Indústria, Inovação e Infraestrutura, por utilizar a tecnologia IoT para monitorar a lotação das estações e auxiliar na tomada de decisões, melhorando a mobilidade urbana e a qualidade de vida da população.
+
 
 ## 1. Identificação do problema e proposta CitizenTech
 
